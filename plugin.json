@@ -9,6 +9,11 @@
 			"placeholder": "Your Twitter username"
 		},
 		{
+			"field": "params.threads",
+			"label": "Threads",
+			"placeholder": "Your Threads username"
+		},
+		{
 			"field": "params.github",
 			"label": "GitHub",
 			"placeholder": "Your GitHub username"
