@@ -29,6 +29,7 @@
 
   {{ $url := .RelPermalink }}<!---->
   {{ $mb := "microdotblog" }}<!---->
+  {{ $thrd := "threads" }}<!---->
   {{ $lkd := "linkedin" }}<!---->
   {{ $mstdn := "mastodon" }}<!---->
   {{ with site.Menus.main }}
@@ -55,7 +56,11 @@
         {{if eq . $mstdn }}
           href="{{ $social_value }}"
         {{ else }}
+        {{if eq . $thrd }}
+          href="https://threads.net@{{ $social_value }}"
+        {{ else }}
           href="https://{{ if eq . $mb }}micro.blog{{else}}{{ . }}.com{{ if eq . $lkd }}/in{{end}}{{end}}/{{ $social_value }}"
+        {{ end }}
         {{ end }}
         target="_blank"
       ></a>
