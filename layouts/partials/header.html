@@ -57,7 +57,7 @@
           href="{{ $social_value }}"
         {{ else }}
         {{if eq . $thrd }}
-          href="https://threads.net@{{ $social_value }}"
+          href="https://threads.net/@{{ $social_value }}"
         {{ else }}
           href="https://{{ if eq . $mb }}micro.blog{{else}}{{ . }}.com{{ if eq . $lkd }}/in{{end}}{{end}}/{{ $social_value }}"
         {{ end }}
