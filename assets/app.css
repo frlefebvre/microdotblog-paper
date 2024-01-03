@@ -65,7 +65,7 @@ body {
   --pro: rgba(var(--dark), 1);
   --lit: rgba(var(--dark), 0.64);
   --air: rgba(var(--dark), 0.48);
-  --fog: rgba(var(--dark), 0.12);
+  --fog: rgba(var(--dark), 0.2);
 
   display: flex;
   flex-direction: column;
@@ -176,8 +176,28 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  border-radius: 0.5em;
+}
+
+figure img {
+  margin-block-start: 0em;
   margin-block-end: 1em;
 }
+
+figcaption {
+  font-size: 2rem;
+  color: var(--lit);
+}
+
+figure {
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  }
 
 /* Header
  -------------------------------------------------- */
@@ -362,13 +382,13 @@ hr.post-separator:before {
 /* Post single
  -------------------------------------------------- */
 .post-title {
-  margin-bottom: calc(var(--y-gap) + 1rem);
+  margin-bottom: var(--y-gap);
 }
 
 .post-title p, .post-date {
   display: flex;
   margin-bottom: 1.5rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--air);
   transform: translateY(0.4rem);
 }
@@ -491,6 +511,7 @@ a.post-date.u-url {
 }
 
 .post-content h3 {
+  margin-top: 4rem;
   font-size: 2.5rem;
 }
 
