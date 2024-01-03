@@ -664,7 +664,7 @@ a.post-date.u-url {
   height: 1px;
   background: var(--fog);
   border: 0;
-  margin-block: 12rem;
+  margin-block: 8rem;
 }
 
 .post-content iframe {
