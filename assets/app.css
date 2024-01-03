@@ -65,7 +65,7 @@ body {
   --pro: rgba(var(--dark), 1);
   --lit: rgba(var(--dark), 0.64);
   --air: rgba(var(--dark), 0.48);
-  --fog: rgba(var(--dark), 0.2);
+  --fog: rgba(var(--dark), 0.15);
 
   display: flex;
   flex-direction: column;
@@ -271,13 +271,13 @@ figure {
   .social { display: none; }
 } */
 
-@media (max-width: 1199px) {
+@media (max-width: 599px) {
   .logo {
     min-width: auto;
   }
 
   [data-menu='true'] {
-    --header: 16rem;
+    --header: 10rem;
   }
 
   [data-menu='true'] .header {
