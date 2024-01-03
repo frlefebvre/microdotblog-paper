@@ -8,7 +8,7 @@
 
 /* Theme
  -------------------------------------------------- */
-:root {
+ :root {
   --gap: 3.5rem;
   --y-gap: 8rem;
   --wide: 140rem;
@@ -200,7 +200,6 @@ img {
 }
 
 .site-name {
-  max-width: calc(100% - 2rem - 3rem);
   padding-bottom: 0.3rem;
   overflow: auto;
   font-size: 3.4rem;
@@ -239,8 +238,8 @@ img {
 }
 
 .social a {
-  width: 3rem;
-  margin-left: 3rem;
+  width: 16pt;
+  margin-left: 16pt;
   background: var(--url) center center no-repeat;
 }
 
@@ -248,9 +247,9 @@ img {
   filter: invert(1);
 }
 
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   .social { display: none; }
-}
+} */
 
 @media (max-width: 1199px) {
   .logo {
